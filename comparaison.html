@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <title>Accueil</title>
+  <style>
+    /* Core styles */
+    :root {
+      --primary: hotpink;
+      --secondary: hotpink;
+      --accent: hotpink;
+      --light: hotpink;
+      --dark: #0D0D0D;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #212121;
+      color: #ffffff;
+      margin: 0;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .form-container {
+      padding: 30px;
+      border-radius: 15px;
+      background: rgba(13, 13, 13, 0.8);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .form-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1 {
+      color: var(--primary);
+    }
+
+    .btn1 {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .btn1:hover {
+      background: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .navbar {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      background-color: var(--dark);
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: var(--light);
+      font-weight: bold;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: var(--accent);
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      color: var(--light);
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .footer a:hover {
+      color: var(--accent);
+    }
+    /* //////////////////////////// */
+
+/*  links sidebar CSS  */
+._social-links {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translatey(-50%);
+	padding: 1em 0.5em 1em 1em;
+	background: #fafafa;
+	border-radius: 0.5em 0 0 0.5em;
+	box-shadow: -4px 0px 0px hotpink;
+	transition: all 300ms ease;
+}
+
+._social-links:hover {
+	box-shadow: -8px 0px 20px hotpink;
+	padding: 1em;
+}
+
+._links-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+._social-link a {
+	color: #111;
+	font-size: 1.5rem;
+	transition: all 200ms ease;
+}
+._social-link a:visited {
+	color: #111;
+}
+._social-link a:hover {
+	color: hotpink;
+	font-size: 1.75rem;
+}
+  </style>
+</head>
+<body>
+  
+
+  <div class="form-container">
+    <h1>Vous voulez comprendre facilement mon niveau ?</h1>
+    <div class="form-content">
+      <p>Alors, comparons, un site crée par moi, et un site crée dans la totalité par ChatGPT.</p>
+      <a href="https://mousxtache-stack.github.io/website-byme-index/index2.html" style="text-decoration: none;color: white;"><button class="btn1">Site CHATGPT</button></a>
+      <a href="https://mousxtache-stack.github.io/website-byme-index/index.html" style="text-decoration: none;color: white;"><button class="btn1">Site crée par mes soins.</button></a>
+    </div>
+    </div>
+    
+  </div>
+  
+</body>
+</html>

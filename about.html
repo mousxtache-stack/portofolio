@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Me</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<style>
+		:root {
+			--bgcolor: rgb(2, 0, 36);
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+
+		body {
+			min-height: 100vh;
+			display: grid;
+			place-items: center;
+			background: var(--bgcolor);
+			color: white;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		h1 {
+			font-size: 5rem;
+			position: relative;
+			text-transform: uppercase;
+			transition: all 300ms ease;
+			width: fit-content;
+			cursor: pointer;
+		}
+
+
+		h1:hover::after {
+			width: 120%;
+			outline: 5px solid rgb(2, 0, 36);
+		}
+
+		/* Links Sidebar */
+		._social-links {
+			position: fixed;
+			right: 0;
+			top: 50%;
+			transform: translatey(-50%);
+			padding: 1em 0.5em 1em 1em;
+			background: #fafafa;
+			border-radius: 0.5em 0 0 0.5em;
+			box-shadow: -4px 0px 0px hotpink;
+			transition: all 300ms ease;
+		}
+
+		._social-links:hover {
+			box-shadow: -8px 0px 20px hotpink;
+			padding: 1em;
+		}
+
+		._links-list {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+		}
+
+		._social-link a {
+			color: #111;
+			font-size: 1.5rem;
+			transition: all 200ms ease;
+		}
+
+		._social-link a:visited {
+			color: #111;
+		}
+
+		._social-link a:hover {
+			color: hotpink;
+			font-size: 1.75rem;
+		}
+
+		/* About Section */
+		.about {
+			text-align: center;
+			max-width: 600px;
+            margin-right: 100px
+		}
+
+		.about p {
+			margin-top: 1em;
+			line-height: 1.8;
+			font-size: 1.2rem;
+            
+		}
+        .pixel-text {
+			font-size: 5rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			position: relative;
+			color: var(--textcolor);
+			animation:  shift 0.5s infinite;
+		}
+        @keyframes shift {
+			0% {
+				transform: translate(0, 0);
+			}
+			20% {
+				transform: translate(-3px, 2px);
+			}
+			40% {
+				transform: translate(3px, -2px);
+			}
+			60% {
+				transform: translate(-2px, -3px);
+			}
+			80% {
+				transform: translate(2px, 3px);
+			}
+			100% {
+				transform: translate(0, 0);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<section class="about">
+		<h1 >About Me</h1>
+		<p  >
+			Hello! I'm [Your Name], a passionate web developer dedicated to creating modern, responsive, and user-friendly websites.
+			My mission is to bring your ideas to life with clean design and efficient functionality. </p>
+             <p style="margin-left: 75px"> Whether you're a business owner,
+			entrepreneur, or someone with a great idea, I'm here to help you make an impact online.
+		</p>
+		<p style="margin-left: 145px">
+			When I'm not coding, you can find me exploring new tech trends, learning new skills, or collaborating on exciting projects.
+			Let's work together to create something amazing!
+		</p>
+	</section>
+
+	<!-- Social Links -->
+    <aside class="_social-links">
+        <ul class="_links-list">
+            <li class="_social-link"><a href="https://discord.com/mousxtache" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+            <li class="_social-link"><a href="https://github.com/mousxtache-stack" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li class="_social-link"><a href="mailto:clement10600@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a></li>
+        </ul>
+    </aside>
+</body>
+</html>
